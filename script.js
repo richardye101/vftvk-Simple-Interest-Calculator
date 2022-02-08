@@ -20,5 +20,6 @@ function validatePrincipal()
     if(document.getElemetnById("principal") < 1)
     {
         alert("Enter a positive number");
+        document.getElementById("principal").focus();
     }
 }
