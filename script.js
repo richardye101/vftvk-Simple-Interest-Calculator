@@ -22,10 +22,6 @@ function validatePrincipal()
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
-    else
-    {
-        updateInterest();
-    }
 }
 
 function compute()
