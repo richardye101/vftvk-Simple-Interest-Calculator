@@ -4,15 +4,10 @@ var years = document.getElementById("years").value;
 var interest = principal * years * rate /100;
 var year = new Date().getFullYear()+parseInt(years);
 
-function updateInterest()
-{
-    document.getElementById("interest").innerHTML = interest;    
-}
-
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerHTML=rateval + "%";
+    document.getElementById("rate_val").innerText=rateval + "%";
 }
 
 function validatePrincipal()
@@ -27,5 +22,5 @@ function validatePrincipal()
 function compute()
 {
     principal = document.getElementById("principal").value;
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
+    document.getElementById("result").innerText="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
 }
