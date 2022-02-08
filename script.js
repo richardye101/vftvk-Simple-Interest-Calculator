@@ -1,6 +1,7 @@
 function compute()
 {
-    p = document.getElementById("principal").value;
+    principal = document.getElementById("principal").value;
+    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
 }
 var principal = document.getElementById("principal").value;
 var rate = document.getElementById("rate").value;
@@ -12,9 +13,4 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
-}
-
-function updateResult()
-{
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
 }
